@@ -69,7 +69,7 @@ ul {
 }
 
 .card-title {
-  font-family: 'Helvetica Neue';
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 25px;
@@ -96,7 +96,7 @@ ul {
 }
 
 .card-content {
-  font-family: 'Helvetica Neue';
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -110,4 +110,15 @@ ul {
   display: flex;
   justify-content: flex-end;
   gap: 14px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .user-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .user-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

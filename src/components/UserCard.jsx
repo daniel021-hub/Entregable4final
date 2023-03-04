@@ -19,11 +19,11 @@ const UserCard = ({
       <hr className="divider" />
       <ul className="card-body">
         <li>
-          <span className="card-label">CORREO</span>
+          <span className="card-label">EMAIL</span>
           <span className="card-content">{user.email}</span>
         </li>
         <li>
-          <span className="card-label">CUMPLEAÑOS</span>
+          <span className="card-label">BIRTHDAY</span>
           <span className="card-content">
             <i className="bx bx-gift"></i> {user.birthday}
           </span>
