@@ -15,6 +15,8 @@ html {
 
 *, *::after, *::before {
   box-sizing: inherit;
+  padding: 0;
+  margin: 0;
 }
 
 img {
@@ -25,4 +27,87 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.divider {
+  margin: 10px 0;
+  border: 0.5px solid #E5E5E5;
+}
+
+.icon-button {
+  background: #F7F7F7;
+  border: 1px solid #BDBDBD;
+  border-radius: 4px;
+  padding: 14px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #D3D3D3;
+}
+
+.is-error {
+  background: #D85D5D;
+  border: 1px solid #D93F3F;
+  color: white;
+}
+
+.user-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto-fill, minmax(100px, auto));
+  grid-gap: 25px;
+  padding: 16px;
+}
+
+.grid-card {
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+  padding: 16px;
+  font-size: 30px;
+  text-align: center;
+  min-width: 381px;
+}
+
+.card-title {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 31px;
+  display: flex;
+  align-items: center;
+  color: #0F0F2D;
+}
+
+.card-body > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.card-label {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #D3D3D3;
+  margin-bottom: 2.5px;
+}
+
+.card-content {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #302F2F;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
 }
